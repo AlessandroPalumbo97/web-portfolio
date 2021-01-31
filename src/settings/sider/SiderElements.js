@@ -1,12 +1,12 @@
-export const SiderElements = [
+export const siderElements = [
   {
     name: 'Home',
     path: '/home',
     icon: 'H',
   },
   {
-    name: 'Test',
-    path: '/test',
-    icon: 'T',
-  }
+    name: 'Salvinification',
+    path: '/salvinification',
+    icon: 'S',
+  },
 ]

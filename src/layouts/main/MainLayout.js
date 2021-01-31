@@ -1,13 +1,18 @@
 import React from "react";
 import { Layout } from "antd";
 import SiderMenu from "@/components/sider/SiderMenu";
-import { SiderElements } from "@/settings/sider/SiderElements";
+import { siderElements } from "@/settings/sider/SiderElements";
 
 const MainLayout = (props) => {
   const {children} = props
   return (
-    <Layout>
-      <SiderMenu elements={SiderElements}/>
+    <Layout
+      style={{
+        width:"100vw",
+        minHeight: "100vh"
+      }}
+    >
+      <SiderMenu elements={siderElements}/>
       <div>
         <h1 style={{color:"red"}}> MAIN LAYOUT </h1>
         {children}

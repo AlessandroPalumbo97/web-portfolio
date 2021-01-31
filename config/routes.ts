@@ -9,11 +9,11 @@ export default [
       },
       {
         path: '/home',
-        component: 'home/home',
+        component: 'home/Home',
       },
       {
-        path: '/test',
-        component: 'test/test',
+        path: '/salvinification',
+        component: 'salvinification/Salvinification',
       },
     ]
   },
