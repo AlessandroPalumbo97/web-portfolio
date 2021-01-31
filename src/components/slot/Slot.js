@@ -57,8 +57,9 @@ class Slot extends PureComponent {
   // Don't permit to extract the same random number of the precedent
   avoidFaceDuplicateOption = () => {
     let random = Math.floor(Math.random() * faces.length);
+    const {lastFaceOption} = this.state
 
-    while (random === this.state.lastFaceOption) {
+    while (random === lastFaceOption) {
       random = Math.floor(Math.random() * faces.length);
     }
 
@@ -93,8 +94,9 @@ class Slot extends PureComponent {
 
   avoidBodyDuplicateOption = () => {
     let random = Math.floor(Math.random() * dresses.length);
+    const {lastOption} = this.state;
 
-    while (random === this.state.lastOption || random === 0) {
+    while (random === lastOption || random === 0) {
       random = Math.floor(Math.random() * dresses.length);
     }
 
@@ -176,23 +178,10 @@ class Slot extends PureComponent {
             </div>
           </Col>
           <Col
+            className={styles.buttonsCol}
             sm={24}
             md={12}
           >
-            <h1>CETACEI</h1>
-            <h1>CETACEI</h1>
-            <h1>CETACEI</h1>
-            <h1>CETACEI</h1>
-            <h1>CETACEI</h1>
-            <h1>CETACEI</h1>
-            <h1>CETACEI</h1>
-            <h1>CETACEI</h1>
-            <h1>CETACEI</h1>
-            <h1>CETACEI</h1>
-            <h1>CETACEI</h1>
-            <h1>CETACEI</h1>
-            <h1>CETACEI</h1>
-            <h1>CETACEI</h1>
             <h2>{this.state.name}</h2>
             <div className={!this.state.rolling ? "rollFace rolling" : "rollFace"} onClick={!this.state.rolling ? this.rollFace :  undefined} disabled={this.state.rolling} >
               {this.state.rolling ? "Rolling..." : "ROLL FACE"}
@@ -214,7 +203,6 @@ class Slot extends PureComponent {
             Salvinification has been developed by me and Elisa Cinquemani
           </Col>
         </Row> */}
-        <h1>VONGOLE</h1>
       </div>
     );
   }

@@ -564,11 +564,11 @@ export const dresses = [
 export const faces = [
   {
     face: face0,
-    name: "normal",
+    surname: "normale",
   },
   {
     face: face1,
-    name: "happy"
+    surname: "felice",
   }
 ]
 

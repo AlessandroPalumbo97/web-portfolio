@@ -13,7 +13,12 @@ const MainLayout = (props) => {
       }}
     >
       <SiderMenu elements={siderElements}/>
-      <div>
+      <div
+        style={{
+          width: "100vw",
+          minHeight: "100vh"
+        }}
+      >
         <h1 style={{color:"red"}}> MAIN LAYOUT </h1>
         {children}
       </div>
