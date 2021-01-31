@@ -1,12 +1,12 @@
 import {Row, Col, Button} from 'antd';
 import MyComponent from '@/components/test/component.js';
 
-export default function Test() {
+export default function Home() {
   return (
     <Row>
       <Col lg={12} xl={12}>
         <div>
-          <h1>TEST index</h1>
+          <h1>HOME index</h1>
           <MyComponent />
         </div>
       </Col>

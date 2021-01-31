@@ -1,7 +1,7 @@
 import styles from './index.less';
 import {Row, Col, Button} from 'antd';
 import MyComponent from '@/components/test/component.js';
-import MainLayout from '@/layouts/Main';
+import MainLayout from '@/layouts/main/MainLayout';
 
 export default function IndexPage() {
   return (
