@@ -1,4 +1,4 @@
-export const siderElements = [
+export const menuElements = [
   {
     name: 'Home',
     path: '/home',
@@ -9,4 +9,4 @@ export const siderElements = [
     path: '/salvinification',
     icon: 'S',
   },
-]
+];

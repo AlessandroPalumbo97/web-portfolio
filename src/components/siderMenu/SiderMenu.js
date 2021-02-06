@@ -10,13 +10,12 @@ class SiderMenu extends PureComponent {
   };
 
   onCollapse = collapsed => {
-    console.log(collapsed);
     this.setState({ collapsed });
   };
 
   render() {
-    const { collapsed } = this.state;
-    const { elements } = this.props;
+    const {collapsed} = this.state;
+    const {elements} = this.props;
 
     console.log(elements)
     return (

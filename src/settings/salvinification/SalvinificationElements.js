@@ -116,459 +116,459 @@ import Dress109 from '@/assets/images/salvinification/109.png';
 export const dresses = [
   {
     dress: DressDefault,
-    name: "",
+    name: '',
   },
   {
     dress: Dress0,
-    name: "Spockvini",
+    name: 'Spockvini',
   },
   {
     dress: Dress1,
-    name: "S.W.A.Tvini",
+    name: 'S.W.A.Tvini',
   },
   {
     dress: Dress2,
-    name: "Salvini carramba",
+    name: 'Salvini carramba',
   },
   {
     dress: Dress3,
-    name: "Salvini ufficiale",
+    name: 'Salvini ufficiale',
   },
   {
     dress: Dress4,
-    name: "Salvini pig",
+    name: 'Salvini pig',
   },
   {
     dress: Dress5,
-    name: "Salvini nostromo",
+    name: 'Salvini nostromo',
   },
   {
     dress: Dress6,
-    name: "Salvini the templar",
+    name: 'Salvini the templar',
   },
   {
     dress: Dress7,
-    name: "Salvini barracellare",
+    name: 'Salvini barracellare',
   },
   {
     dress: Dress8,
-    name: "Swissvini",
+    name: 'Swissvini',
   },
   {
     dress: Dress9,
-    name: "Cheerlini",
+    name: 'Cheerlini',
   },
   {
     dress: Dress10,
-    name: "Salvini IL FINANZIERE",
+    name: 'Salvini IL FINANZIERE',
   },
   {
     dress: Dress11,
-    name: "Astro Salvini",
+    name: 'Astro Salvini',
   },
   {
     dress: Dress12,
-    name: "Salvo texas ranger",
+    name: 'Salvo texas ranger',
   },
   {
     dress: Dress13,
-    name: "Salvigile",
+    name: 'Salvigile',
   },
   {
     dress: Dress14,
-    name: "Obi Salv Kenobi",
+    name: 'Obi Salv Kenobi',
   },
   {
     dress: Dress15,
-    name: "Salvininja",
+    name: 'Salvininja',
   },
   {
     dress: Dress16,
-    name: "Mr.Salvastic",
+    name: 'Mr.Salvastic',
   },
   {
     dress: Dress17,
-    name: "Salvini pompiere",
+    name: 'Salvini pompiere',
   },
   {
     dress: Dress18,
-    name: "Fra' Salvini",
+    name: 'Fra\' Salvini',
   },
   {
     dress: Dress19,
-    name: "Salvini migrant-buster",
+    name: 'Salvini migrant-buster',
   },
   {
     dress: Dress20,
-    name: "Salvocop",
+    name: 'Salvocop',
   },
   {
     dress: Dress21,
-    name: "Salvini dei 1000",
+    name: 'Salvini dei 1000',
   },
   {
     dress: Dress22,
-    name: "Salvinion",
+    name: 'Salvinion',
   },
   {
     dress: Dress23,
-    name: "Power Salvin",
+    name: 'Power Salvin',
   },
   {
     dress: Dress24,
-    name: "Salvo X Meridio",
+    name: 'Salvo X Meridio',
   },
   {
     dress: Dress25,
-    name: "Salvini Sailor Moon",
+    name: 'Salvini Sailor Moon',
   },
   {
     dress: Dress26,
-    name: "Super salvyan",
+    name: 'Super salvyan',
   },
   {
     dress: Dress27,
-    name: "Salvini globetrotter",
+    name: 'Salvini globetrotter',
   },
   {
     dress: Dress28,
-    name: "Salvinella",
+    name: 'Salvinella',
   },
   {
     dress: Dress29,
-    name: "Salvini bayclose",
+    name: 'Salvini bayclose',
   },
   {
     dress: Dress30,
-    name: "Kobra-Salv",
+    name: 'Kobra-Salv',
   },
   {
     dress: Dress31,
-    name: "Scottish Salvini",
+    name: 'Scottish Salvini',
   },
   {
     dress: Dress32,
-    name: "Royal Salvini",
+    name: 'Royal Salvini',
   },
   {
     dress: Dress33,
-    name: "Mr.Salvbean",
+    name: 'Mr.Salvbean',
   },
   {
     dress: Dress34,
-    name: "Scoutvini",
+    name: 'Scoutvini',
   },
   {
     dress: Dress35,
-    name: "Salvazone",
+    name: 'Salvazone',
   },
   {
     dress: Dress36,
-    name: "Salvini HeMan",
+    name: 'Salvini HeMan',
   },
   {
     dress: Dress37,
-    name: "Buzz Salvyear",
+    name: 'Buzz Salvyear',
   },
   {
     dress: Dress38,
-    name: "Austin Salvini",
+    name: 'Austin Salvini',
   },
   {
     dress: Dress39,
-    name: "SSalvini",
+    name: 'SSalvini',
   },
   {
     dress: Dress40,
-    name: "Matteo Balotelli",
+    name: 'Matteo Balotelli',
   },
   {
     dress: Dress41,
-    name: "Salvini ladro",
+    name: 'Salvini ladro',
   },
   {
     dress: Dress42,
-    name: "Shaolvini",
+    name: 'Shaolvini',
   },
   {
     dress: Dress43,
-    name: "Salviron man",
+    name: 'Salviron man',
   },
   {
     dress: Dress44,
-    name: "Salvini CRI",
+    name: 'Salvini CRI',
   },
   {
     dress: Dress45,
-    name: "Soviet Salvini",
+    name: 'Soviet Salvini',
   },
   {
     dress: Dress46,
-    name: "Cardinal Salvini",
+    name: 'Cardinal Salvini',
   },
   {
     dress: Dress47,
-    name: "S'Alvagnan",
+    name: 'S\'Alvagnan',
   },
   {
     dress: Dress48,
-    name: "Salvy Potter",
+    name: 'Salvy Potter',
   },
   {
     dress: Dress49,
-    name: "Adrian Salvini",
+    name: 'Adrian Salvini',
   },
   {
     dress: Dress50,
-    name: "Salvini matador",
+    name: 'Salvini matador',
   },
   {
     dress: Dress51,
-    name: "Sambini",
+    name: 'Sambini',
   },
   {
     dress: Dress52,
-    name: "Telesalvin",
+    name: 'Telesalvin',
   },
   {
     dress: Dress53,
-    name: "Salvini Cooper",
+    name: 'Salvini Cooper',
   },
   {
     dress: Dress54,
-    name: "Aladini",
+    name: 'Aladini',
   },
   {
     dress: Dress55,
-    name: "Sulk",
+    name: 'Sulk',
   },
   {
     dress: Dress56,
-    name: "Salvini Uzumaki",
+    name: 'Salvini Uzumaki',
   },
   {
     dress: Dress57,
-    name: "Wolverini",
+    name: 'Wolverini',
   },
   {
     dress: Dress58,
-    name: "One punch Salvini",
+    name: 'One punch Salvini',
   },
   {
     dress: Dress59,
-    name: "Sandalf",
+    name: 'Sandalf',
   },
   {
     dress: Dress60,
-    name: "Salvigolas",
+    name: 'Salvigolas',
   },
   {
     dress: Dress61,
-    name: "Cetriolo Salvini",
+    name: 'Cetriolo Salvini',
   },
   {
     dress: Dress62,
-    name: "Salvini aggiustatutto",
+    name: 'Salvini aggiustatutto',
   },
   {
     dress: Dress63,
-    name: "Rick Salvchez",
+    name: 'Rick Salvchez',
   },
   {
     dress: Dress64,
-    name: "Matteo Auditore",
+    name: 'Matteo Auditore',
   },
   {
     dress: Dress65,
-    name: "Papa Salvesco",
+    name: 'Papa Salvesco',
   },
   {
     dress: Dress66,
-    name: "Regina Elisalvetta",
+    name: 'Regina Elisalvetta',
   },
   {
     dress: Dress67,
-    name: "Mugiwara no Salvini",
+    name: 'Mugiwara no Salvini',
   },
   {
     dress: Dress68,
-    name: "Buddhini",
+    name: 'Buddhini',
   },
   {
     dress: Dress69,
-    name: "Matteo Bonaparte",
+    name: 'Matteo Bonaparte',
   },
   {
     dress: Dress70,
-    name: "Salvini Z",
+    name: 'Salvini Z',
   },
   {
     dress: Dress71,
-    name: "Salvini Morpheus",
+    name: 'Salvini Morpheus',
   },
   {
     dress: Dress72,
-    name: "Gargalvini",
+    name: 'Gargalvini',
   },
   {
     dress: Dress73,
-    name: "Salvini l'unno",
+    name: 'Salvini l\'unno',
   },
   {
     dress: Dress74,
-    name: "Spidersalv",
+    name: 'Spidersalv',
   },
   {
     dress: Dress75,
-    name: "Supersalv",
+    name: 'Supersalv',
   },
   {
     dress: Dress76,
-    name: "Salvini Zenigata",
+    name: 'Salvini Zenigata',
   },
   {
     dress: Dress77,
-    name: "Banda Salvotti",
+    name: 'Banda Salvotti',
   },
   {
     dress: Dress78,
-    name: "Salvini team Racket",
+    name: 'Salvini team Racket',
   },
   {
     dress: Dress79,
-    name: "Salv-Bill",
+    name: 'Salv-Bill',
   },
   {
     dress: Dress80,
-    name: "OPA Salvini style",
+    name: 'OPA Salvini style',
   },
   {
     dress: Dress81,
-    name: "Salvini Maui",
+    name: 'Salvini Maui',
   },
   {
     dress: Dress82,
-    name: "Salv Branningan",
+    name: 'Salv Branningan',
   },
   {
     dress: Dress83,
-    name: "Matteo il barbaro",
+    name: 'Matteo il barbaro',
   },
   {
     dress: Dress84,
-    name: "Salvini dio della guerra",
+    name: 'Salvini dio della guerra',
   },
   {
     dress: Dress85,
-    name: "$alvini €bbasta",
+    name: '$alvini €bbasta',
   },
   {
     dress: Dress86,
-    name: "BIG SALVO",
+    name: 'BIG SALVO',
   },
   {
     dress: Dress87,
-    name: "Borattino",
+    name: 'Borattino',
   },
   {
     dress: Dress88,
-    name: "Salvis Presley",
+    name: 'Salvis Presley',
   },
   {
     dress: Dress89,
-    name: "Oliver Salvton",
+    name: 'Oliver Salvton',
   },
   {
     dress: Dress90,
-    name: "Ronald McSalvini",
+    name: 'Ronald McSalvini',
   },
   {
     dress: Dress91,
-    name: "Salien",
+    name: 'Salien',
   },
   {
     dress: Dress92,
-    name: "Salvatar",
+    name: 'Salvatar',
   },
   {
     dress: Dress93,
-    name: "Wookvini",
+    name: 'Wookvini',
   },
   {
     dress: Dress94,
-    name: "Salvpool",
+    name: 'Salvpool',
   },
   {
     dress: Dress95,
-    name: "Salvini Kruger",
+    name: 'Salvini Kruger',
   },
   {
     dress: Dress96,
-    name: "Salvini witcher",
+    name: 'Salvini witcher',
   },
   {
     dress: Dress97,
-    name: "Giorno Mattea",
+    name: 'Giorno Mattea',
   },
   {
     dress: Dress98,
-    name: "Salv Bond",
+    name: 'Salv Bond',
   },
   {
     dress: Dress99,
-    name: "Jason Salvhoorhees",
+    name: 'Jason Salvhoorhees',
   },
   {
     dress: Dress100,
-    name: "Salv Cena",
+    name: 'Salv Cena',
   },
   {
     dress: Dress101,
-    name: "Ken il politico",
+    name: 'Ken il politico',
   },
   {
     dress: Dress102,
-    name: "Salvini l'eletto",
+    name: 'Salvini l\'eletto',
   },
   {
     dress: Dress103,
-    name: "Salvator",
+    name: 'Salvator',
   },
   {
     dress: Dress104,
-    name: "Salvini schockante",
+    name: 'Salvini schockante',
   },
   {
     dress: Dress105,
-    name: "Sub-vini",
+    name: 'Sub-vini',
   },
   {
     dress: Dress106,
-    name: "Salvinator",
+    name: 'Salvinator',
   },
   {
     dress: Dress107,
-    name: "Salvinicthe rock",
+    name: 'Salvini the rock',
   },
   {
     dress: Dress108,
-    name: "Salvini immigrato",
+    name: 'Salvini immigrato',
   },
   {
     dress: Dress109,
-    name: "Salvini Wassim",
+    name: 'Salvini Wassim',
   },
 
-]
+];
 
 export const faces = [
   {
     face: face0,
-    surname: "normale",
+    surname: 'normale',
   },
   {
     face: face1,
-    surname: "felice",
-  }
-]
+    surname: 'felice',
+  },
+];
 

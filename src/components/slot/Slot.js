@@ -1,6 +1,6 @@
 import React, {PureComponent} from 'react';
 import html2canvas from 'html2canvas';
-import { Row, Col } from 'antd';
+import {Row, Col, Button} from 'antd';
 import { DownloadOutlined } from '@ant-design/icons';
 import styles from './Slot.less';
 
@@ -142,60 +142,82 @@ class Slot extends PureComponent {
   }
 
   render() {
-    console.log(dresses, faces)
-
+    const {rolling} = this.state
     return (
       <div className={styles.slotMachine}>
         <Row>
           <Col
+            id="capture"
+            className={styles.capture}
             sm={24}
             md={12}
           >
-            <div id="capture" className={styles.capture}>
-              <div id="face-slot" className={styles.faceSlot}>
-                <section className={styles.faceSection}>
-                  <div className={styles.slotContainer} ref={this.faceSlotRef}>
-                    {faces.map((face, i) => (
-                      <div key={i}>
-                        <img className={styles.salviniFace} src={face.face} alt="salvini's face" />
-                      </div>
-                    ))}
-                  </div>
-                </section>
-              </div>
-              <div id="body-slot" className={styles.bodySlot}>
-                <section className={styles.bodySection}>
-                  <div className={styles.slotContainer} ref={this.bodySlotRef}>
-                    {dresses.map((dress, i) => (
-                      <div key={i}>
-                        <img src={dress.dress} alt="salvini's dress" />
-                      </div>
-                    ))}
-                  </div>
-                </section>
-              </div>
+            <div className={styles.faceSlot}>
+              <section className={styles.faceSection}>
+                <div className={styles.slotContainer} ref={this.faceSlotRef}>
+                  {faces.map((face, i) => (
+                    <div key={i}>
+                      <img className={styles.salviniFace} src={face.face} alt="salvini's face" />
+                    </div>
+                  ))}
+                </div>
+              </section>
+            </div>
+            <div className={styles.bodySlot}>
+              <section className={styles.bodySection}>
+                <div className={styles.slotContainer} ref={this.bodySlotRef}>
+                  {dresses.map((dress, i) => (
+                    <div key={i}>
+                      <img src={dress.dress} alt="salvini's dress" />
+                    </div>
+                  ))}
+                </div>
+              </section>
               <h1 id="screenshot-name" className={styles.screenshotName} ref={this.screenshotNameRef}>{this.state.name}</h1>
             </div>
           </Col>
+          {/*=============== BUTTONS ===============*/}
           <Col
             className={styles.buttonsCol}
             sm={24}
             md={12}
           >
             <h2>{this.state.name}</h2>
-            <div className={!this.state.rolling ? "rollFace rolling" : "rollFace"} onClick={!this.state.rolling ? this.rollFace :  undefined} disabled={this.state.rolling} >
-              {this.state.rolling ? "Rolling..." : "ROLL FACE"}
-            </div>
-            <div className={!this.state.rolling ? "rollBody rolling" : "rollBody"} onClick={!this.state.rolling ? this.rollBody :  undefined} disabled={this.state.rolling} >
-              {this.state.rolling ? "Rolling..." : "ROLL BODY"}
-            </div>
-            <div className={!this.state.rolling ? "roll rolling" : "roll"} onClick={!this.state.rolling ? this.rollBoth :  undefined} disabled={this.state.rolling} >
-              {this.state.rolling ? "Rolling..." : "ROLL BOTH"}
-            </div>
-            <div className={styles.screenshot} onClick={this.screenshot} ref={this.captureBtnRef} disabled={this.state.rolling}>
+            <Button
+              className={styles.rollFace}
+              onClick={!rolling ? this.rollFace :  undefined}
+              disabled={rolling}
+            >
+              {rolling ? "Rolling..." : "ROLL FACE"}
+            </Button>
+            <Button
+              className={styles.rollBody}
+              onClick={!rolling ? this.rollBody :  undefined}
+              disabled={rolling}
+            >
+              {rolling ? "Rolling..." : "ROLL BODY"}
+            </Button>
+            <Button
+              className={styles.rollBoth}
+              onClick={!rolling ? this.rollBoth :  undefined}
+              disabled={rolling}
+            >
+              {rolling ? "Rolling..." : "ROLL BOTH"}
+            </Button>
+            <Button
+              className={styles.screenshot}
+              onClick={this.screenshot}
+              ref={this.captureBtnRef}
+              disabled={rolling}
+            >
               SAVE HIM <DownloadOutlined />
-            </div>
-            <p ref={this.captureLabelRef} className={styles.screenshotLabel}>Desktop only</p>
+            </Button>
+            <p
+              ref={this.captureLabelRef}
+              className={styles.screenshotLabel}
+            >
+              Desktop only
+            </p>
           </Col>
         </Row>
         {/* <Row className="text-center font weight-bolder my-4">
