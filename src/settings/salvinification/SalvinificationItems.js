@@ -528,7 +528,7 @@ export const DRESSES = [
   },
   {
     dress: Dress102,
-    name: "Salvini l'eletto",
+    name: 'Salvineo',
   },
   {
     dress: Dress103,

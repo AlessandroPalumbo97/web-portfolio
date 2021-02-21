@@ -33,54 +33,17 @@ class MainLayout extends React.Component {
     );
   }
 
-  // setLogoStyle = (style) => {
-  //   switch (style) {
-  //     case '/salvinification':
-  //       this.setState({currentLogo: {
-  //         svg: logoIta,
-  //         png: logoItaPng,
-  //       }});
-  //       break;
-  //     case '/aurora':
-  //       this.setState({currentLogo: {
-  //         svg: logoAurora,
-  //         png: logoAuroraPng,
-  //       }});
-  //       break;
-  //     default:
-  //       this.setState({currentLogo: {
-  //         svg: logoHot,
-  //         png: logoHotPng,
-  //       }});
-  //       break;
-  //   }
-  // };
-
-  getLogoSvg = () => {
+  getLogo = (svg = true) => {
     const { location } = this.props;
     const { pathname } = location;
 
     switch (pathname) {
       case '/salvinification':
-        return logoIta;
+        return svg ? logoIta : logoItaPng;
       case '/aurora':
-        return logoAurora;
+        return svg ? logoAurora : logoAuroraPng;
       default:
-        return logoHot;
-    }
-  };
-
-  getLogoPng = () => {
-    const { location } = this.props;
-    const { pathname } = location;
-
-    switch (pathname) {
-      case '/salvinification':
-        return logoItaPng;
-      case '/aurora':
-        return logoAuroraPng;
-      default:
-        return logoHotPng;
+        return svg ? logoHot : logoHotPng;
     }
   };
 
@@ -118,7 +81,7 @@ class MainLayout extends React.Component {
         </div>
 
         <div className={styles.rightCol}>
-          <img src={this.getLogoSvg() || this.getLogoPng()} alt="logo" />
+          <img src={this.getLogo() || this.getLogo(false)} alt="logo" />
         </div>
       </Layout>
     );
