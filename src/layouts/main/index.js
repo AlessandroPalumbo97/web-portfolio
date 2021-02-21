@@ -1,11 +1,11 @@
 import React from 'react';
-import { Col, Layout, Row } from 'antd';
+import { Layout } from 'antd';
 import SiderMenu from '@/components/siderMenu';
 import MobileMenu from '@/components/mobileMenu';
 import { MENU_ITEMS } from '@/settings/mainMenu/MenuItems';
 import PropTypes from 'prop-types';
 import styles from './index.less';
-import ParticlesBg from 'particles-bg';
+// import ParticlesBg from 'particles-bg';
 
 import logoHot from '@/assets/images/AP_logo_hot.svg';
 import logoHotPng from '@/assets/images/AP_logo_hot.png';
@@ -19,10 +19,6 @@ const { Header } = Layout;
 class MainLayout extends React.Component {
   state = {
     isMobile: window.innerWidth < 768,
-    // /*currentLogo: {
-    //   svg: logoHot,
-    //   png: logoHotPng,
-    // },*/
   };
 
   componentDidMount() {

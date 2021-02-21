@@ -1,5 +1,5 @@
 import React from 'react';
-import Index from '@/layouts/main';
+import MainLayout from '@/layouts/main';
 
 export default function IndexPage() {
   return null;
