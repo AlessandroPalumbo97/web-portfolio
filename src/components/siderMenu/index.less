@@ -1,0 +1,43 @@
+@import '../../utils/colors';
+
+.sider {
+  //border-right: 1px solid white;
+
+  :global {
+    .ant-layout-sider-children {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    div {
+      ul {
+        background-color: @dark-blue !important;
+        border: none !important;
+
+        li.ant-menu-item,
+        li.ant-menu-item-selected {
+          text-align: right;
+          transition: all 0.3s;
+
+          a {
+            color: #fff;
+            transition: all 0.3s;
+          }
+
+          a:hover {
+            font-size: 105%;
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    li.ant-menu-item-selected {
+      background-color: @dark-blue !important;
+      height: 60px;
+      line-height: 60px;
+      transition: all 0.3s;
+    }
+  }
+}

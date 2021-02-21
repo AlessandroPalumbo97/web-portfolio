@@ -26,12 +26,15 @@
     "antd": "^4.11.2",
     "html2canvas": "^1.0.0-rc.7",
     "particles-bg": "^2.5.0",
+    "prop-types": "^15.7.2",
+    "react-spring": "^8.0.27",
     "umi": "^3.3.7"
   },
   "devDependencies": {
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
     "@umijs/test": "^3.3.7",
+    "babel-eslint": "^10.1.0",
     "eslint": "^7.19.0",
     "eslint-config-google": "^0.14.0",
     "eslint-plugin-react": "^7.22.0",

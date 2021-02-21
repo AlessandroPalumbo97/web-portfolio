@@ -1,0 +1,71 @@
+@import '../../utils/colors';
+
+.layout {
+  flex: 1 0 auto;
+  width: 100vw;
+  min-height: 92.3vh;
+  font-family: novel-sans-pro, sans-serif;
+  background-color: @dark-blue;
+  z-index: 10 !important;
+
+  .mobileHeader {
+    position: relative;
+  }
+
+  .rightCol {
+    width: 200px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 200px;
+    flex-direction: row;
+    padding: 0 24px;
+
+    .logo {
+      width: 100%;
+      height: 100%;
+      margin: auto 0;
+      max-width: 180px;
+    }
+  }
+
+  i,
+  p,
+  a,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #fff;
+  }
+
+  i,
+  p,
+  a {
+    font-family: Futura, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+
+  h1,
+  h2 {
+    font-family: Termina, serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: Futura, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+}
+
+canvas {
+  z-index: 100 !important;
+}

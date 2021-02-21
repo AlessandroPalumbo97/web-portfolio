@@ -1,7 +1,7 @@
 export default [
   {
     path: '/',
-    component: '@/layouts/main/MainLayout',
+    component: '@/layouts/main',
     routes: [
       {
         path: '/',
@@ -9,12 +9,16 @@ export default [
       },
       {
         path: '/home',
-        component: 'home/Home',
+        component: 'home',
       },
       {
         path: '/salvinification',
-        component: 'salvinification/Salvinification',
+        component: 'salvinification',
       },
-    ]
+      {
+        path: '/about',
+        component: 'about',
+      },
+    ],
   },
 ];
