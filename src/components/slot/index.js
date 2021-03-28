@@ -149,7 +149,7 @@ class Index extends PureComponent {
     return (
       <div className={styles.slotMachine}>
         <Row>
-          <Col id="capture" className={styles.capture} sm={24} md={12}>
+          <Col id="capture" className={styles.capture} sm={24} md={12} lg={12}>
             <div className={styles.faceSlot}>
               <section className={styles.faceSection}>
                 <div className={styles.slotContainer} ref={this.faceSlotRef}>
@@ -175,18 +175,18 @@ class Index extends PureComponent {
                   ))}
                 </div>
               </section>
-              <h1
+              <h2
                 id="screenshot-name"
                 className={styles.screenshotName}
                 ref={this.screenshotNameRef}
               >
                 {this.state.name}
-              </h1>
+              </h2>
             </div>
           </Col>
           {/* =============== BUTTONS ===============*/}
-          <Col className={styles.buttonsCol} sm={24} md={12}>
-            <h2>{this.state.name}</h2>
+          <Col className={styles.buttonsCol} sm={24} md={12} lg={12}>
+            <h2 className={styles.displayName}>{this.state.name}</h2>
             <Button
               className={styles.rollFace}
               onClick={!rolling ? this.rollFace : undefined}

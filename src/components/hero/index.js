@@ -33,7 +33,7 @@ class Hero extends React.Component {
             <div>
               {title && <h1 className={styles.heroTitle}>{title}</h1>}
               {subTitle && <h3 className={styles.heroSubTitle}>{subTitle}</h3>}
-              {text && <h3 className={styles.heroText}>{text}</h3>}
+              {text && <p className={styles.heroText}>{text}</p>}
             </div>
           </Col>
         </Row>
