@@ -96,6 +96,7 @@ class MainLayout extends React.Component {
               title={heroItems.title}
               subTitle={heroItems.subTitle}
               text={heroItems.text}
+              photo={heroItems.photo ? heroItems.photo : null}
             />
           )}
           {children}

@@ -1,3 +1,5 @@
+import me from '@/assets/images/me.jpg';
+
 export const HERO_ITEMS = {
   home: {
     title: 'Alessandro Palumbo',
@@ -10,6 +12,7 @@ export const HERO_ITEMS = {
     subTitle:
       'My name is Alessandro Palumbo, but people use to call me just Alex or P',
     text: 'lorem ipsum dolor sit amet',
+    photo: me,
   },
   salvinification: {
     title: 'Salvinification',
