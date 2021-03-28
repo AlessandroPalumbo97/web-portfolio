@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: alessandropalumbo.art
+Token: 512ebcaed19559a5a2cff458967db4ee4ff57160431ccc49f4fb8d7c5c8905c1
