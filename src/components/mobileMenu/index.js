@@ -22,7 +22,7 @@ class MobileMenu extends PureComponent {
       <Menu>
         {elements.map((e) => {
           return (
-            <Link to={e.path}>
+            <Link to={e.path} key={e.id}>
               <Menu.Item key={e.name} icon={e.icon}>
                 {e.name}
               </Menu.Item>
@@ -53,7 +53,7 @@ class MobileMenu extends PureComponent {
 }
 
 MobileMenu.propTypes = {
-  elements: arrayOf(),
+  elements: PropTypes.arrayOf(PropTypes.any),
 };
 
 export default MobileMenu;

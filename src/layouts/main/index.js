@@ -66,23 +66,29 @@ class MainLayout extends React.Component {
         {isMobile ? (
           <Header className={styles.mobileHeader}>
             <MobileMenu elements={MENU_ITEMS} />
+
+            <img
+              className={styles.mobileHeaderLogo}
+              src={this.getLogo() || this.getLogo(false)}
+              alt="logo"
+            />
           </Header>
         ) : (
           <SiderMenu elements={MENU_ITEMS} isMobile={isMobile} />
         )}
 
         <div
-          style={{
-            width: '100%',
-            minHeight: '100vh',
-          }}
+          className={styles.mainCol}
+          style={isMobile ? { marginTop: '100px' } : {}}
         >
           {children}
         </div>
 
-        <div className={styles.rightCol}>
-          <img src={this.getLogo() || this.getLogo(false)} alt="logo" />
-        </div>
+        {!isMobile && (
+          <div className={styles.rightCol}>
+            <img src={this.getLogo() || this.getLogo(false)} alt="logo" />
+          </div>
+        )}
       </Layout>
     );
   }
