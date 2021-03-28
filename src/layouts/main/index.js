@@ -2,7 +2,9 @@ import React from 'react';
 import { Layout } from 'antd';
 import SiderMenu from '@/components/siderMenu';
 import MobileMenu from '@/components/mobileMenu';
+import Hero from '@/components/hero';
 import { MENU_ITEMS } from '@/settings/mainMenu/MenuItems';
+import { HERO_ITEMS } from '@/settings/hero/HeroItems';
 import PropTypes from 'prop-types';
 import styles from './index.less';
 // import ParticlesBg from 'particles-bg';
@@ -47,10 +49,18 @@ class MainLayout extends React.Component {
     }
   };
 
+  getHeroItems = () => {
+    const { location } = this.props;
+    let { pathname } = location;
+    pathname = pathname.replace('/', '');
+
+    return HERO_ITEMS[pathname] || null;
+  };
+
   render() {
     const { children } = this.props;
-
     const { isMobile } = this.state;
+    const heroItems = this.getHeroItems();
 
     // const bg = (
     //   <ParticlesBg
@@ -81,12 +91,23 @@ class MainLayout extends React.Component {
           className={styles.mainCol}
           style={isMobile ? { marginTop: '100px' } : {}}
         >
+          {heroItems !== null && (
+            <Hero
+              title={heroItems.title}
+              subTitle={heroItems.subTitle}
+              text={heroItems.text}
+            />
+          )}
           {children}
         </div>
 
         {!isMobile && (
           <div className={styles.rightCol}>
-            <img src={this.getLogo() || this.getLogo(false)} alt="logo" />
+            <img
+              className={styles.logo}
+              src={this.getLogo() || this.getLogo(false)}
+              alt="logo"
+            />
           </div>
         )}
       </Layout>

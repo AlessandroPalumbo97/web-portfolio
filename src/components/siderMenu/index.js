@@ -9,7 +9,6 @@ class Index extends PureComponent {
   render() {
     const { elements } = this.props || {};
 
-    console.log(elements);
     return (
       <Sider className={styles.sider}>
         <Menu>
