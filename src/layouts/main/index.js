@@ -3,18 +3,12 @@ import { Layout } from 'antd';
 import SiderMenu from '@/components/siderMenu';
 import MobileMenu from '@/components/mobileMenu';
 import Hero from '@/components/hero';
+import Logo from '@/components/logo';
 import { MENU_ITEMS } from '@/settings/mainMenu/MenuItems';
 import { HERO_ITEMS } from '@/settings/hero/HeroItems';
 import PropTypes from 'prop-types';
 import styles from './index.less';
 // import ParticlesBg from 'particles-bg';
-
-import logoHot from '@/assets/images/AP_logo_hot.svg';
-import logoHotPng from '@/assets/images/AP_logo_hot.png';
-import logoIta from '@/assets/images/AP_logo_italian.svg';
-import logoItaPng from '@/assets/images/AP_logo_italian.png';
-import logoAurora from '@/assets/images/AP_logo_aurora.svg';
-import logoAuroraPng from '@/assets/images/AP_logo_aurora.png';
 
 const { Header } = Layout;
 
@@ -35,20 +29,6 @@ class MainLayout extends React.Component {
     );
   }
 
-  getLogo = (svg = true) => {
-    const { location } = this.props;
-    const { pathname } = location;
-
-    switch (pathname) {
-      case '/salvinification':
-        return svg ? logoIta : logoItaPng;
-      case '/aurora':
-        return svg ? logoAurora : logoAuroraPng;
-      default:
-        return svg ? logoHot : logoHotPng;
-    }
-  };
-
   getHeroItems = () => {
     const { location } = this.props;
     let { pathname } = location;
@@ -58,7 +38,7 @@ class MainLayout extends React.Component {
   };
 
   render() {
-    const { children } = this.props;
+    const { children, location } = this.props;
     const { isMobile } = this.state;
     const heroItems = this.getHeroItems();
 
@@ -77,11 +57,7 @@ class MainLayout extends React.Component {
           <Header className={styles.mobileHeader}>
             <MobileMenu elements={MENU_ITEMS} />
 
-            <img
-              className={styles.mobileHeaderLogo}
-              src={this.getLogo() || this.getLogo(false)}
-              alt="logo"
-            />
+            <Logo isMobile={isMobile} location={location} />
           </Header>
         ) : (
           <SiderMenu elements={MENU_ITEMS} isMobile={isMobile} />
@@ -104,11 +80,7 @@ class MainLayout extends React.Component {
 
         {!isMobile && (
           <div className={styles.rightCol}>
-            <img
-              className={styles.logo}
-              src={this.getLogo() || this.getLogo(false)}
-              alt="logo"
-            />
+            <Logo isMobile={isMobile} location={location} />
           </div>
         )}
       </Layout>

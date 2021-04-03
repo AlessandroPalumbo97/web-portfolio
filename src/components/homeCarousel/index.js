@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './index.less';
-import { CARD_ITEMS } from './PageContent';
+import { CARD_ITEMS } from '@/settings/homeCarousel/CarouselItems';
 import Card from '@/components/homeCarousel/card';
 import { Row } from 'antd';
 

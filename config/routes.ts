@@ -12,6 +12,10 @@ export default [
         component: 'home',
       },
       {
+        path: '/aurora',
+        component: 'aurora',
+      },
+      {
         path: '/salvinification',
         component: 'salvinification',
       },

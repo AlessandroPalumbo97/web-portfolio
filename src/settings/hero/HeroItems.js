@@ -7,6 +7,11 @@ export const HERO_ITEMS = {
     text:
       'Check out my projects below, contact me, or just have fun playing Salvinification',
   },
+
+  aurora: {
+    title: 'Aurora',
+    subTitle: 'Aurora is a robotic dog, thought and originated from scratch',
+  },
   about: {
     title: 'About Me',
     subTitle:
