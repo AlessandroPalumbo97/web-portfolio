@@ -1,0 +1,101 @@
+@import '../../utils/colors';
+@import '../../utils/breakpoints';
+
+.layout {
+  flex: 1 0 auto;
+  width: 100vw;
+  height: 100%;
+  min-height: 100vh;
+  font-family: novel-sans-pro, sans-serif;
+  background-color: @dark-blue;
+  z-index: 10 !important;
+
+  .mobileHeader {
+    padding: 0 37px !important;
+    position: fixed;
+    z-index: 10;
+    height: 100px;
+    width: 100%;
+    display: flex !important;
+    justify-content: space-between;
+    align-content: center;
+    line-height: 100px !important;
+
+    .mobileHeaderLogo {
+      float: right;
+      display: flex;
+      width: 84px;
+      margin: auto 0;
+    }
+  }
+
+  .mainCol {
+    width: 100%;
+    min-height: 100vh;
+    padding: 37px 200px;
+
+    @media only screen and (max-width: @break-md-max) {
+      padding: 37px !important;
+    }
+  }
+
+  .rightCol {
+    position: fixed;
+    right: 0;
+    top: 45%;
+    width: 200px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 200px;
+    flex-direction: row;
+    padding: 0 24px;
+
+    .logo {
+      width: 100%;
+      height: 100%;
+      margin: auto 0;
+      max-width: 180px;
+    }
+  }
+
+  i,
+  p,
+  a,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #fff;
+  }
+
+  i,
+  p,
+  a {
+    font-family: Futura, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+
+  h1,
+  h2 {
+    font-family: Termina, serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: Futura, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+}
+
+canvas {
+  z-index: 100 !important;
+}

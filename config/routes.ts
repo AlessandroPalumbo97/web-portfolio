@@ -1,5 +1,15 @@
 export default [
   {
+    path: '/projects',
+    component: '@/layouts/detail',
+    routes: [
+      {
+        path: '/projects/aurora',
+        component: 'aurora',
+      },
+    ],
+  },
+  {
     path: '/',
     component: '@/layouts/main',
     routes: [
@@ -10,10 +20,6 @@ export default [
       {
         path: '/home',
         component: 'home',
-      },
-      {
-        path: '/aurora',
-        component: 'aurora',
       },
       {
         path: '/salvinification',

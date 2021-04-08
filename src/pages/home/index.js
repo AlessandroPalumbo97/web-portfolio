@@ -2,7 +2,7 @@ import React from 'react';
 import { Row, Col } from 'antd';
 import HomeCarousel from '@/components/homeCarousel';
 import PropTypes from 'prop-types';
-import Hero from '@/components/hero';
+import MainLayout from '@/layouts/main';
 
 const Home = (props) => {
   return (
