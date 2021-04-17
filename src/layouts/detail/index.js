@@ -1,16 +1,8 @@
 import React from 'react';
 import { Layout } from 'antd';
-import SiderMenu from '@/components/siderMenu';
-import MobileMenu from '@/components/mobileMenu';
-import Hero from '@/components/hero';
-import Logo from '@/components/logo';
-import { MENU_ITEMS } from '@/settings/mainMenu/MenuItems';
-import { HERO_ITEMS } from '@/settings/hero/HeroItems';
 import PropTypes from 'prop-types';
 import styles from './index.less';
 // import ParticlesBg from 'particles-bg';
-
-const { Header } = Layout;
 
 class DetailLayout extends React.Component {
   state = {
@@ -29,18 +21,8 @@ class DetailLayout extends React.Component {
     );
   }
 
-  getHeroItems = () => {
-    const { location } = this.props;
-    let { pathname } = location;
-    pathname = pathname.replace('/', '');
-
-    return HERO_ITEMS[pathname] || null;
-  };
-
   render() {
-    const { children, location } = this.props;
-    const { isMobile } = this.state;
-    const heroItems = this.getHeroItems();
+    const { children } = this.props;
 
     // const bg = (
     //   <ParticlesBg
@@ -51,18 +33,12 @@ class DetailLayout extends React.Component {
     //   />
     // );
 
-    return (
-      <Layout className={styles.layout}>
-        <h1>LAYOPUT HUHIIJIOJOOJOJ</h1>
-        {children}
-      </Layout>
-    );
+    return <Layout className={styles.layout}>{children}</Layout>;
   }
 }
 
 DetailLayout.propTypes = {
   children: PropTypes.any,
-  location: PropTypes.string,
 };
 
 export default DetailLayout;
