@@ -1,13 +1,22 @@
 @import '../../../utils/colors';
 
 .cardWrapper {
-  display: inline-block;
+  border-radius: 20px;
   margin: 20px;
-}
 
-.cardImage {
-  border-radius: 10px;
-  width: 300px;
-  height: 480px;
-  //box-shadow: 0px 3px 3px @site-yellow;
+  .ant-card-cover {
+    border-radius: 20px;
+  }
+
+  .cardImage {
+    border-radius: 15px;
+    width: 300px;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+
+  .cardButtonWrapper {
+    text-align: center;
+  }
 }

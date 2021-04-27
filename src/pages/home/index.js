@@ -2,12 +2,11 @@ import React from 'react';
 import { Row, Col } from 'antd';
 import HomeCarousel from '@/components/homeCarousel';
 import PropTypes from 'prop-types';
-import MainLayout from '@/layouts/main';
 
 const Home = (props) => {
   return (
     <Row>
-      <Col lg={24} xl={24}>
+      <Col lg={24}>
         <div>
           <HomeCarousel />
         </div>
