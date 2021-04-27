@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Card, Divider } from 'antd';
+import { Card } from 'antd';
 import styles from './index.less';
 import LinkedButton from '@/components/linkedButton';
 import { ArrowRightOutlined } from '@ant-design/icons';
