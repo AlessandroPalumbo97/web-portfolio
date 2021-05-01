@@ -16,7 +16,7 @@ function MyCard(props) {
       <img className={styles.cardImage} src={imgSrc} alt={imgSrc} />
       <Meta className={styles.cardMeta} title={title} description={subTitle} />
       <div className={styles.cardButtonWrapper}>
-        <LinkedButton link={link} rounded size="large" type="primary" gradient>
+        <LinkedButton link={link} rounded size="large" type="primary">
           Scopri di più <ArrowRightOutlined />
         </LinkedButton>
       </div>

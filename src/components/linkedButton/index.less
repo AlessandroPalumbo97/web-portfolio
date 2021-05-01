@@ -1,5 +1,19 @@
 @import '../../utils/colors';
 
 .linkedButton {
-  background: linear-gradient(135deg, @night-blue 0%, @dark-blue 10%);
+  border: none;
+  background: @medium-blue;
+  color: #fff;
+  transition: all 0.7s;
+}
+.linkedButton:hover {
+  border: none;
+  background: @site-yellow;
+  color: #fff;
+}
+
+.linkedButton:active {
+  border: none;
+  background: @dark-blue;
+  color: #fff;
 }

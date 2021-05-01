@@ -19,17 +19,26 @@
         border: none !important;
 
         li.ant-menu-item,
-        li.ant-menu-item-selected {
+        li.ant-menu-item-selected,
+        li.ant-menu-item-active {
           text-align: right;
           transition: all 0.3s;
 
           a {
-            color: #000;
+            color: @medium-blue;
             transition: all 0.3s;
           }
 
           a:hover {
             color: @site-yellow;
+            -webkit-transition-property: color;
+            -webkit-transition-duration: 0.3s;
+            -webkit-transition-timing-function: ease-in-out;
+          }
+
+          a:active {
+            color: @dark-blue;
+            background: transparent !important;
             -webkit-transition-property: color;
             -webkit-transition-duration: 0.3s;
             -webkit-transition-timing-function: ease-in-out;

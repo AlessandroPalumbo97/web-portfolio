@@ -10,7 +10,7 @@ const LinkedButton = (props) => {
   return (
     <Link to={link}>
       <Button
-        className={gradient ? styles.linkedButton : null}
+        className={styles.linkedButton}
         type={gradient ? type : null}
         style={rounded ? { borderRadius: '25px' } : {}}
         size={size}
