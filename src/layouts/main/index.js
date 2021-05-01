@@ -57,7 +57,9 @@ class MainLayout extends React.Component {
           <Header className={styles.mobileHeader}>
             <MobileMenu elements={MENU_ITEMS} />
 
-            <Logo isMobile={isMobile} location={location} />
+            <div className={styles.logoWrapper}>
+              <Logo isMobile={isMobile} location={location} />
+            </div>
           </Header>
         ) : (
           <SiderMenu elements={MENU_ITEMS} isMobile={isMobile} />
