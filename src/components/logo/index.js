@@ -37,7 +37,7 @@ const Logo = (props) => {
 };
 
 Logo.propTypes = {
-  location: PropTypes.string,
+  location: PropTypes.objectOf(PropTypes.any),
   isMobile: PropTypes.bool,
 };
 

@@ -92,7 +92,7 @@ class MainLayout extends React.Component {
 
 MainLayout.propTypes = {
   children: PropTypes.any,
-  location: PropTypes.string,
+  location: PropTypes.objectOf(PropTypes.any),
 };
 
 export default MainLayout;
