@@ -14,9 +14,7 @@ export const HERO_ITEMS = {
   },
   about: {
     title: 'About Me',
-    subTitle:
-      'My name is Alessandro Palumbo, but people use to call me just Alex or P',
-    text: 'lorem ipsum dolor sit amet',
+    subTitle: 'Alessandro Palumbo',
     photo: me,
   },
   salvinification: {

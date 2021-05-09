@@ -1,8 +1,9 @@
 import React from 'react';
+import styles from './index.less';
 import PropTypes from 'prop-types';
 
 const AboutPage = () => {
-  return <div>TODO</div>;
+  return <div className={styles.aboutWrapper}></div>;
 };
 
 AboutPage.propTypes = {
