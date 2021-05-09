@@ -8,7 +8,7 @@ import { MENU_ITEMS } from '@/settings/mainMenu/MenuItems';
 import { HERO_ITEMS } from '@/settings/hero/HeroItems';
 import PropTypes from 'prop-types';
 import styles from './index.less';
-// import ParticlesBg from 'particles-bg';
+import ParticlesBg from 'particles-bg';
 
 const { Header } = Layout;
 
@@ -42,14 +42,22 @@ class MainLayout extends React.Component {
     const { isMobile } = this.state;
     const heroItems = this.getHeroItems();
 
-    // const bg = (
-    //   <ParticlesBg
-    //     color="#ffffff"
-    //     type={'cobweb'}
-    //     num={100}
-    //     bg={true}
-    //   />
-    // );
+    const config = {
+      num: [10, 20], // numero di particelle, [min, max]
+      rps: 0.1, // rateo di emissione (in secondi)
+      radius: [1, 50],
+      life: [1, 4], // longevità delle particelle
+      v: [1, 2],
+      tha: [0, 0],
+      alpha: [0.3, 0.6],
+      scale: [1, 2],
+      position: 'all',
+      color: ['#000000'],
+      cross: 'dead',
+      random: 10,
+      f: [0, -1],
+      g: null,
+    };
 
     return (
       <Layout className={styles.layout}>
@@ -85,6 +93,13 @@ class MainLayout extends React.Component {
             <Logo isMobile={isMobile} location={location} />
           </div>
         )}
+        <ParticlesBg
+          color={'#213263'}
+          type={'cobweb'}
+          num={100}
+          bg={true}
+          // config={config}
+        />
       </Layout>
     );
   }

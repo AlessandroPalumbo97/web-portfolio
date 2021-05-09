@@ -1,5 +1,4 @@
 import nervousCard from '@/assets/images/cards/nervousCardx2.png';
-// import nervousLink from '@/assets/compressed/nervous_fighter.zip';
 
 import auroraCard from '@/assets/images/cards/auroraCardx2.png';
 
@@ -26,7 +25,7 @@ export const CARD_ITEMS = [
   },
   {
     id: 2,
-    title: 'Printed is better',
+    title: '3D Print',
     subTitle: '3D print is amazing, check it out!',
     imgSrc: printCard,
     link: '/projects/3Dprint',
