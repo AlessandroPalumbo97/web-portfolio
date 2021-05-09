@@ -9,6 +9,7 @@ import { HERO_ITEMS } from '@/settings/hero/HeroItems';
 import PropTypes from 'prop-types';
 import styles from './index.less';
 import ParticlesBg from 'particles-bg';
+import Typekit from 'react-typekit';
 
 const { Header } = Layout;
 
@@ -42,25 +43,26 @@ class MainLayout extends React.Component {
     const { isMobile } = this.state;
     const heroItems = this.getHeroItems();
 
-    const config = {
-      num: [10, 20], // numero di particelle, [min, max]
-      rps: 0.1, // rateo di emissione (in secondi)
-      radius: [1, 50],
-      life: [1, 4], // longevità delle particelle
-      v: [1, 2],
-      tha: [0, 0],
-      alpha: [0.3, 0.6],
-      scale: [1, 2],
-      position: 'all',
-      color: ['#000000'],
-      cross: 'dead',
-      random: 10,
-      f: [0, -1],
-      g: null,
-    };
+    // const config = {
+    //   num: [10, 20], // numero di particelle, [min, max]
+    //   rps: 0.1, // rateo di emissione (in secondi)
+    //   radius: [1, 50],
+    //   life: [1, 4], // longevità delle particelle
+    //   v: [1, 2],
+    //   tha: [0, 0],
+    //   alpha: [0.3, 0.6],
+    //   scale: [1, 2],
+    //   position: 'all',
+    //   color: ['#000000'],
+    //   cross: 'dead',
+    //   random: 10,
+    //   f: [0, -1],
+    //   g: null,
+    // };
 
     return (
       <Layout className={styles.layout}>
+        <Typekit kitId="sjl0wey" />
         {isMobile ? (
           <Header className={styles.mobileHeader}>
             <MobileMenu elements={MENU_ITEMS} />

@@ -30,6 +30,7 @@
     "particles-bg": "^2.5.0",
     "prop-types": "^15.7.2",
     "react-spring": "^8.0.27",
+    "react-typekit": "^1.1.4",
     "umi": "^3.3.7"
   },
   "devDependencies": {
