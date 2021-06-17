@@ -14,7 +14,7 @@ export const HERO_ITEMS = {
   },
   about: {
     title: 'About Me',
-    subTitle: 'Alessandro Palumbo',
+    subTitle: 'Hi there!',
     photo: me,
   },
   salvinification: {

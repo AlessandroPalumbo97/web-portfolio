@@ -43,7 +43,7 @@ class FlippableCard extends PureComponent {
               <Meta className="cardDescription" description={subTitle} />
               <div className="cardButtonWrapper">
                 <LinkedButton link={link} rounded size="large" type="primary">
-                  Scopri di più <ArrowRightOutlined />
+                  Read more <ArrowRightOutlined />
                 </LinkedButton>
               </div>
             </div>
