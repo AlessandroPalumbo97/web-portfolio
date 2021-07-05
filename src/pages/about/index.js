@@ -16,7 +16,7 @@ const AboutPage = () => {
           it. Few years later, I started watching my daddy programming Java.
         </p>
         <p>
-          So my curiosity for videogame and technology grew up year by year.
+          So my curiosity for videogames and technology grew up year by year.
         </p>
         <p>
           In July 2020 I got my degree from European Institute of Design of

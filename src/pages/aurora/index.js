@@ -15,8 +15,6 @@ const AuroraPage = (props) => {
   return (
     <div className={styles.auroraWrapper}>
       <div className={styles.auroraLogoWrapper}>
-        <MobileMenu elements={MENU_ITEMS} />
-
         <img className={styles.logo} src={logo} alt="aurora\'s logo" />
       </div>
 
