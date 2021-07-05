@@ -1,5 +1,7 @@
 import React from 'react';
+import { Link } from 'umi';
 import { Layout } from 'antd';
+import { LeftCircleTwoTone } from '@ant-design/icons';
 import PropTypes from 'prop-types';
 import styles from './index.less';
 // import ParticlesBg from 'particles-bg';
@@ -24,16 +26,18 @@ class DetailLayout extends React.Component {
   render() {
     const { children } = this.props;
 
-    // const bg = (
-    //   <ParticlesBg
-    //     color="#ffffff"
-    //     type={'cobweb'}
-    //     num={100}
-    //     bg={true}
-    //   />
-    // );
-
-    return <Layout className={styles.layout}>{children}</Layout>;
+    return (
+      <Layout className={styles.layout}>
+        <Link to="/">
+          <LeftCircleTwoTone
+            className={styles.backIcon}
+            onClick={this.goBack}
+            twoToneColor="#ffce00"
+          />
+        </Link>
+        {children}
+      </Layout>
+    );
   }
 }
 
