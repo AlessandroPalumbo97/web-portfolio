@@ -96,9 +96,9 @@ class MainLayout extends React.Component {
           </div>
         )}
         <ParticlesBg
-          color={'#213263'}
+          color={'#c7c7c7'}
           type={'cobweb'}
-          num={100}
+          num={60}
           bg={true}
           // config={config}
         />

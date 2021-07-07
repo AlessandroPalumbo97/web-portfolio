@@ -1,19 +1,19 @@
-import nervousCard from '@/assets/images/cards/nervousCardx2.png';
+// import nervousCard from '@/assets/images/cards/nervousCardx2.png';
 
 import auroraCard from '@/assets/images/cards/auroraCardx2.png';
 
 import printCard from '@/assets/images/cards/printCardx2.png';
 
 export const CARD_ITEMS = [
-  {
-    id: 0,
-    title: 'Nervous Fighter!',
-    subTitle: 'My BETA version of a stickman fighter',
-    imgSrc: nervousCard,
-    link: '',
-    selected: false,
-    downloadable: true,
-  },
+  // {
+  //   id: 0,
+  //   title: 'Nervous Fighter!',
+  //   subTitle: 'My BETA version of a stickman fighter',
+  //   imgSrc: nervousCard,
+  //   link: '',
+  //   selected: false,
+  //   downloadable: true,
+  // },
   {
     id: 1,
     title: 'Aurora',
