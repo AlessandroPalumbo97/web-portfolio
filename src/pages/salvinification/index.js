@@ -3,12 +3,6 @@ import Slot from '@/components/slot';
 // import {Row, Col} from 'antd';
 // import styles from './index.less';
 
-const Salvinification = () => {
-  return (
-    <>
-      <Slot />
-    </>
-  );
-};
+const Salvinification = () => <Slot />;
 
 export default Salvinification;

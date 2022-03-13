@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import html2canvas from 'html2canvas';
-import { Row, Col, Button } from 'antd';
+import { Row, Col, Button, Spin } from 'antd';
 import { DownloadOutlined } from '@ant-design/icons';
 import styles from './index.less';
 import {
@@ -146,86 +146,99 @@ class Index extends PureComponent {
 
   render() {
     const { rolling } = this.state;
+    const loading = true;
+    // const loading = (!FACES || !DRESSES);
     return (
       <div className={styles.slotMachine}>
-        <Row>
-          <Col id="capture" className={styles.capture} sm={24} md={12} lg={12}>
-            <div className={styles.faceSlot}>
-              <section className={styles.faceSection}>
-                <div className={styles.slotContainer} ref={this.faceSlotRef}>
-                  {FACES.map((face, i) => (
-                    <div key={i}>
-                      <img
-                        className={styles.salviniFace}
-                        src={face.face}
-                        alt="salvini's face"
-                      />
+        <Row className={styles.salvinificationMainRow}>
+          {loading ? (
+            <Col xs={24}>
+              <Spin />
+            </Col>
+          ) : (
+            <>
+              <Col id="capture" className={styles.capture} xs={24} md={12}>
+                <div className={styles.faceSlot}>
+                  <section className={styles.faceSection}>
+                    <div
+                      className={styles.slotContainer}
+                      ref={this.faceSlotRef}
+                    >
+                      {FACES.map((face, i) => (
+                        <div key={i}>
+                          <img
+                            className={styles.salviniFace}
+                            src={face.face}
+                            alt="salvini's face"
+                          />
+                        </div>
+                      ))}
                     </div>
-                  ))}
+                  </section>
                 </div>
-              </section>
-            </div>
-            <div className={styles.bodySlot}>
-              <section className={styles.bodySection}>
-                <div className={styles.slotContainer} ref={this.bodySlotRef}>
-                  {DRESSES.map((dress, i) => (
-                    <div key={i}>
-                      <img src={dress.dress} alt="salvini's dress" />
+                <div className={styles.bodySlot}>
+                  <section className={styles.bodySection}>
+                    <div
+                      className={styles.slotContainer}
+                      ref={this.bodySlotRef}
+                    >
+                      {DRESSES.map((dress, i) => (
+                        <div key={i}>
+                          <img src={dress.dress} alt="salvini's dress" />
+                        </div>
+                      ))}
                     </div>
-                  ))}
+                  </section>
+                  <h2
+                    id="screenshot-name"
+                    className={styles.screenshotName}
+                    ref={this.screenshotNameRef}
+                  >
+                    {this.state.name}
+                  </h2>
                 </div>
-              </section>
-              <h2
-                id="screenshot-name"
-                className={styles.screenshotName}
-                ref={this.screenshotNameRef}
-              >
-                {this.state.name}
-              </h2>
-            </div>
-          </Col>
-          {/* =============== BUTTONS ===============*/}
-          <Col className={styles.buttonsCol} sm={24} md={12} lg={12}>
-            <h2 className={styles.displayName}>{this.state.name}</h2>
-            <Button
-              className={styles.rollFace}
-              onClick={!rolling ? this.rollFace : undefined}
-              disabled={rolling}
-            >
-              {rolling ? 'Rolling...' : 'ROLL FACE'}
-            </Button>
-            <Button
-              className={styles.rollBody}
-              onClick={!rolling ? this.rollBody : undefined}
-              disabled={rolling}
-            >
-              {rolling ? 'Rolling...' : 'ROLL BODY'}
-            </Button>
-            <Button
-              className={styles.rollBoth}
-              onClick={!rolling ? this.rollBoth : undefined}
-              disabled={rolling}
-            >
-              {rolling ? 'Rolling...' : 'ROLL BOTH'}
-            </Button>
-            <Button
-              className={styles.screenshot}
-              onClick={this.screenshot}
-              ref={this.captureBtnRef}
-              disabled={rolling}
-            >
-              SAVE HIM <DownloadOutlined />
-            </Button>
-            <p ref={this.captureLabelRef} className={styles.screenshotLabel}>
-              Desktop only
-            </p>
-          </Col>
+              </Col>
+              <Col className={styles.buttonsCol} xs={24} md={12}>
+                <h2 className={styles.displayName}>{this.state.name}</h2>
+                <Button
+                  className={styles.rollFace}
+                  onClick={!rolling ? this.rollFace : undefined}
+                  disabled={rolling}
+                >
+                  {rolling ? 'Rolling...' : 'ROLL FACE'}
+                </Button>
+                <Button
+                  className={styles.rollBody}
+                  onClick={!rolling ? this.rollBody : undefined}
+                  disabled={rolling}
+                >
+                  {rolling ? 'Rolling...' : 'ROLL BODY'}
+                </Button>
+                <Button
+                  className={styles.rollBoth}
+                  onClick={!rolling ? this.rollBoth : undefined}
+                  disabled={rolling}
+                >
+                  {rolling ? 'Rolling...' : 'ROLL BOTH'}
+                </Button>
+                <Button
+                  className={styles.screenshot}
+                  onClick={this.screenshot}
+                  ref={this.captureBtnRef}
+                  disabled={rolling}
+                >
+                  SAVE HIM <DownloadOutlined />
+                </Button>
+                <p
+                  ref={this.captureLabelRef}
+                  className={styles.screenshotLabel}
+                >
+                  Desktop only
+                </p>
+              </Col>
+            </>
+          )}
         </Row>
-        {/* <Row className="text-center font weight-bolder my-4">
-          <Col md={12} sm={12}>
-            Index has been developed by me and Elisa Cinquemani
-          </Col>
-        </Row> */}
       </div>
     );
   }
