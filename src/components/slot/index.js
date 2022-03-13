@@ -146,8 +146,8 @@ class Index extends PureComponent {
 
   render() {
     const { rolling } = this.state;
-    const loading = true;
-    // const loading = (!FACES || !DRESSES);
+    // const loading = true;
+    const loading = !FACES || !DRESSES;
     return (
       <div className={styles.slotMachine}>
         <Row className={styles.salvinificationMainRow}>
