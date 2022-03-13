@@ -1,14 +1,14 @@
 export default [
-  {
-    path: '/projects',
-    component: '@/layouts/detail',
-    routes: [
-      {
-        path: '/projects/aurora',
-        component: 'aurora',
-      },
-    ],
-  },
+  // {
+  //   path: '/projects',
+  //   component: '@/layouts/detail',
+  //   routes: [
+  //     {
+  //       path: '/projects/aurora',
+  //       component: 'aurora',
+  //     },
+  //   ],
+  // },
   {
     path: '/',
     component: '@/layouts/main',
@@ -28,6 +28,10 @@ export default [
       {
         path: '/about',
         component: 'about',
+      },
+      {
+        path: '/projects',
+        component: 'projects',
       },
     ],
   },

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'umi';
 import PropTypes from 'prop-types';
-import styles from '@/layouts/main/index.less';
 
 import logoHot from '@/assets/images/AP_logo_hot.svg';
 import logoHotPng from '@/assets/images/AP_logo_hot.png';
@@ -11,7 +10,7 @@ import logoAurora from '@/assets/images/AP_logo_aurora.svg';
 import logoAuroraPng from '@/assets/images/AP_logo_aurora.png';
 
 const Logo = (props) => {
-  const { location, isMobile } = props;
+  const { location } = props;
   const { pathname } = location;
 
   const getLogo = (svg = true) => {
@@ -28,7 +27,10 @@ const Logo = (props) => {
   return (
     <Link to="/">
       <img
-        className={isMobile ? styles.mobileHeaderLogo : styles.logo}
+        style={{
+          width: '100%',
+          maxWidth: 72,
+        }}
         src={getLogo() || getLogo(false)}
         alt="logo"
       />
@@ -38,7 +40,7 @@ const Logo = (props) => {
 
 Logo.propTypes = {
   location: PropTypes.objectOf(PropTypes.any),
-  isMobile: PropTypes.bool,
+  variableClassName: PropTypes.any,
 };
 
 export default Logo;

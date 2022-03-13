@@ -12,8 +12,8 @@ export const MENU_ITEMS = [
     icon: '',
   },
   {
-    name: 'About',
-    path: '/about',
+    name: 'Projects',
+    path: '/projects',
     id: 2,
     icon: '',
   },

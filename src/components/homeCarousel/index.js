@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './index.less';
-import { CARD_ITEMS } from '@/settings/homeCarousel/CarouselItems';
-import Card from '@/components/homeCarousel/card';
+import { CARD_ITEMS } from '@/settings/ProjectsCarousel/CarouselItems';
+import Card from '@/components/ProjectsCarousel/card';
 import { Row } from 'antd';
 
-class HomeCarousel extends React.Component {
+class ProjectsCarousel extends React.Component {
   handleCardClick = (id, card) => {
     const itemsList = [...CARD_ITEMS];
 
@@ -45,8 +45,8 @@ class HomeCarousel extends React.Component {
   }
 }
 
-HomeCarousel.propTypes = {
+ProjectsCarousel.propTypes = {
   itemsList: PropTypes.any,
 };
 
-export default HomeCarousel;
+export default ProjectsCarousel;

@@ -5,7 +5,7 @@ import styles from './index.less';
 
 const { Sider } = Layout;
 
-class Index extends PureComponent {
+class SiderMenu extends PureComponent {
   render() {
     const { elements } = this.props || {};
 
@@ -25,4 +25,4 @@ class Index extends PureComponent {
   }
 }
 
-export default Index;
+export default SiderMenu;
